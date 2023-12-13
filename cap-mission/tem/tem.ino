@@ -6,15 +6,15 @@
 #define ONE_WIRE_BUS D4
 
 const char* host = "api.thingspeak.com";   
-String ApiKey = "U9Z1UHAAOLQKR20E";
+String ApiKey = "";
 String path = "/update?key=" + ApiKey + "&field1=";  
 
 
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature DS18B20(&oneWire);
 
-const char* ssid = "sgwlan_secure";
-const char* pass = "kkm30903%%";
+const char* ssid = "";
+const char* pass = "";
 
 
 char temperatureString[6];
